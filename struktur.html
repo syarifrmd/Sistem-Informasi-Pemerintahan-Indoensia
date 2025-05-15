@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pemerintahan Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .card-3d {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        .card-3d:hover {
+            transform: translateY(-5px) rotateX(5deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .card-front {
+            backface-visibility: hidden;
+        }
+        .ministry-badge {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        @media (max-width: 640px) {
+            .ministry-badge {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+                top: -8px;
+                right: -8px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Garuda">
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="index.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                            <a href="sistem.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Sistem Pemerintahan</a>
+                            <a href="struktur.html" class="bg-red-600 text-white px-3 py-2 rounded-md text-sm font-medium">Struktur Kabinet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700">
+                            <i class="fas fa-search mr-2"></i>Cari
+                        </button>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="sistem.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Sistem Pemerintahan</a>
+                <a href="struktur.html" class="bg-red-600 text-white block px-3 py-2 rounded-md text-base font-medium">Struktur Kabinet</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-5">
+                    <button class="bg-red-600 text-white w-full px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700">
+                        <i class="fas fa-search mr-2"></i>Cari
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <div class="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block">Struktur</span>
+                            <span class="block text-red-600">Kabinet Merah Putih</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Seluruh komponen pemerintahan Indonesia yang bekerja secara sinergis untuk mencapai tujuan negara.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#kabinet" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10">
+                                    Lihat Kabinet
+                                </a>
+                            </div>
+                            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                                <a href="sistem.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                    Sistem Pemerintahan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551524559-8af4e6624178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="Indonesian Government Building">
+        </div>
+    </div>
+
+    <!-- Cabinet Structure Section -->
+    <section id="kabinet" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    <span class="block">Susunan Kabinet</span>
+                    <span class="block text-red-600">Pemerintahan Indonesia</span>
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Seluruh menteri dan pejabat setingkat menteri dalam Kabinet Merah Putih
+                </p>
+            </div>
+
+            <!-- Coordinating Ministers -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                    <h3 class="text-2xl font-bold text-gray-800">Menteri Koordinator</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/1.jpg" alt="Budi Gunawan">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Budi Gunawan</h4>
+                                    <p class="text-sm text-red-600">Menteri Koordinator</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bidang Politik dan Keamanan
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kantor Kemenko Polhukam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/2.jpg" alt="Yusril Ihza Mahendra">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Yusril Ihza Mahendra</h4>
+                                    <p class="text-sm text-red-600">Menteri Koordinator</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kantor Kemenko Hukum dan HAM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/3.jpg" alt="Airlangga Hartarto">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Airlangga Hartarto</h4>
+                                    <p class="text-sm text-red-600">Menteri Koordinator</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bidang Perekonomian
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kantor Kemenko Perekonomian</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ministers -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                    <h3 class="text-2xl font-bold text-gray-800">Menteri Negara</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/4.jpg" alt="Muhammad Tito Karnavian">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Muhammad Tito Karnavian</h4>
+                                    <p class="text-sm text-red-600">Menteri Dalam Negeri</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bertanggung jawab atas urusan dalam negeri
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kementerian Dalam Negeri</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/5.jpg" alt="Sugiono">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Sugiono</h4>
+                                    <p class="text-sm text-red-600">Menteri Luar Negeri</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bertanggung jawab atas hubungan luar negeri
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kementerian Luar Negeri</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/6.jpg" alt="Sjafrie Sjamsoeddin">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Sjafrie Sjamsoeddin</h4>
+                                    <p class="text-sm text-red-600">Menteri Pertahanan</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bertanggung jawab atas pertahanan negara
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kementerian Pertahanan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-pray"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/7.jpg" alt="Nasaruddin Umar">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Nasaruddin Umar</h4>
+                                    <p class="text-sm text-red-600">Menteri Agama</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bertanggung jawab atas urusan agama
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kementerian Agama</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sri Mulyani Indrawati">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Sri Mulyani Indrawati</h4>
+                                    <p class="text-sm text-red-600">Menteri Keuangan</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bertanggung jawab atas keuangan negara
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kementerian Keuangan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/8.jpg" alt="Abdul Mu'ti">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Abdul Mu'ti</h4>
+                                    <p class="text-sm text-red-600">Menteri Pendidikan</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Dasar dan Menengah
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kementerian Pendidikan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deputy Ministers -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                    <h3 class="text-2xl font-bold text-gray-800">Wakil Menteri</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/9.jpg" alt="Lodewijk Freidrich Paulus">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Lodewijk Freidrich Paulus</h4>
+                                    <p class="text-sm text-red-600">Wakil Menteri Koordinator</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bidang Politik dan Keamanan
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kantor Kemenko Polhukam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/10.jpg" alt="Otto Hasibuan">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Otto Hasibuan</h4>
+                                    <p class="text-sm text-red-600">Wakil Menteri Koordinator</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kantor Kemenko Hukum dan HAM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Bambang Eko Suharyanto">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Bambang Eko Suharyanto</h4>
+                                    <p class="text-sm text-red-600">Wakil Menteri Sekretaris Negara</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Membantu Menteri Sekretaris Negara
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Sekretariat Negara</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minister-Level Officials -->
+            <div>
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                    <h3 class="text-2xl font-bold text-gray-800">Pejabat Setingkat Menteri</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/2.jpg" alt="Sanitiar Burhanuddin">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Sanitiar Burhanuddin</h4>
+                                    <p class="text-sm text-red-600">Jaksa Agung</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Kepala Kejaksaan Agung Republik Indonesia
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kejaksaan Agung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/12.jpg" alt="Muhammad Herindra">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Muhammad Herindra</h4>
+                                    <p class="text-sm text-red-600">Kepala BIN</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Kepala Badan Intelijen Negara
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Kantor BIN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-3d bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="ministry-badge bg-red-600 text-white">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="p-6 card-front">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-16 w-16 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/13.jpg" alt="Jenderal Agus Subiyanto">
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Jenderal Agus Subiyanto</h4>
+                                    <p class="text-sm text-red-600">Panglima TNI</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-gray-600 text-sm">
+                                    Panglima Tentara Nasional Indonesia
+                                </p>
+                                <div class="mt-3 flex items-center text-sm text-gray-500">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Markas Besar TNI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Sistem Pemerintahan Indonesia</h3>
+                    <p class="text-gray-300 text-sm">
+                        Website ini menyajikan informasi tentang sistem dan struktur pemerintahan Republik Indonesia berdasarkan UUD 1945.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white text-sm">Beranda</a></li>
+                        <li><a href="sistem.html" class="text-gray-300 hover:text-white text-sm">Sistem Pemerintahan</a></li>
+                        <li><a href="struktur.html" class="text-gray-300 hover:text-white text-sm">Struktur Kabinet</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-map-marker-alt mr-2 text-red-400"></i>
+                        <span class="text-gray-300 text-sm">Jl. Medan Merdeka Selatan, Jakarta</span>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-phone-alt mr-2 text-red-400"></i>
+                        <span class="text-gray-300 text-sm">(021) 345-6789</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope mr-2 text-red-400"></i>
+                        <span class="text-gray-300 text-sm">info@pemerintah.go.id</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm mb-4 md:mb-0">
+                    &copy; 2023 Sistem Pemerintahan Indonesia. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 3D card effect
+        const cards = document.querySelectorAll('.card-3d');
+        
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+                const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+                card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            });
+            
+            // Reset on mouse leave
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) rotateX(0)';
+            });
+        });
+    </script>
+</body>
+</html>

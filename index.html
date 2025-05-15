@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pemerintahan Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #e11d1d 0%, #ffffff 50%, #e11d1d 100%);
+        }
+        .nav-shadow {
+            box-shadow: 0 4px 6px -1px rgba(220, 38, 38, 0.1), 0 2px 4px -1px rgba(220, 38, 38, 0.06);
+        }
+        .section-divider {
+            border-bottom: 2px solid #e11d1d;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.3);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #e11d1d;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white nav-shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-landmark text-red-600 text-2xl"></i>
+                    <span class="text-xl font-bold text-gray-800">Sistem Pemerintahan</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-red-600 font-semibold hover:text-red-800 transition">Beranda</a>
+                    <a href="/struktur.html" class="text-gray-700 hover:text-red-600 transition">Struktur</a>
+                    <a href="#history" class="text-gray-700 hover:text-red-600 transition">Sejarah</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Sistem Pemerintahan Indonesia</h1>
+                    <p class="text-lg text-gray-700 mb-6">Menjelajahi struktur dan mekanisme pemerintahan Republik Indonesia berdasarkan UUD 1945</p>
+                    <a href="#system" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 inline-block">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white p-4 rounded-lg shadow-xl max-w-md">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1200px-Flag_of_Indonesia.svg.png" alt="Bendera Indonesia" class="w-full h-auto rounded">
+                        <div class="mt-4 text-center">
+                            <h3 class="font-bold text-gray-800">Republik Indonesia</h3>
+                            <p class="text-sm text-gray-600">Negara Kesatuan Berbentuk Republik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Sistem Pemerintahan Section -->
+        <section id="system" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                <h2 class="text-3xl font-bold text-gray-800">Sistem Pemerintahan Indonesia</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-book text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Menurut UUD 1945</h3>
+                    </div>
+                    <p class="text-gray-700">Pembukaan UUD 1945 Alinea IV menyatakan bahwa kemerdekaan kebangsaan Indonesia itu disusun dalam suatu Undang-Undang Dasar Negara Indonesia yang terbentuk dalam suatu susunan negara Republik Indonesia yang berkedaulatan rakyat.</p>
+                    <p class="text-gray-700 mt-2">Berdasarkan Pasal 1 Ayat 1 UUD 1945, Negara Indonesia adalah negara kesatuan yang berbentuk republik. Presiden Republik Indonesia memegang kekuasaan sebagai kepala negara dan sekaligus kepala pemerintahan.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-balance-scale text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Pembagian Kekuasaan</h3>
+                    </div>
+                    <p class="text-gray-700">Kekuasaan dalam suatu Negara menurut Montesquieu diklasifikasikan menjadi tiga:</p>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-1">
+                        <li>Kekuasaan Eksekutif: kekuasaan menjalankan undang-undang atau kekuasaan menjalankan pemerintahan</li>
+                        <li>Kekuasaan Legislatif: kekuasaan membentuk undang-undang</li>
+                        <li>Kekuasaan Yudikatif: kekuasaan mengadili terhadap pelanggaran atas undang-undang</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Perbandingan dengan Indische Staatsregeling</h3>
+                <p class="text-gray-700 mb-4">Sistem pemerintahan yang dianut oleh UUD 1945 adalah sistem campuran antara model Indische Staatsregeling (konstitusi kolonial Hindia Belanda) dengan sistem pemerintahan sosialis model Uni Soviet.</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-200">
+                        <thead class="bg-red-50">
+                            <tr>
+                                <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-700 font-semibold">Lembaga UUD 1945</th>
+                                <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-700 font-semibold">Lembaga Kolonial</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-200">Majelis Permusyawaratan Rakyat</td>
+                                <td class="py-2 px-4 border-b border-gray-200">Sovyet Tertinggi</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-200">Presiden/Wakil Presiden</td>
+                                <td class="py-2 px-4 border-b border-gray-200">Gouverneur Generaal/Luitenant Gouverneur Generaal</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-200">Dewan Pertimbangan Agung</td>
+                                <td class="py-2 px-4 border-b border-gray-200">Raad van Nederlandsch-Indie</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-2 px-4 border-b border-gray-200">Dewan Perwakilan Rakyat</td>
+                                <td class="py-2 px-4 border-b border-gray-200">Volksraad</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sejarah Section -->
+        <section id="history" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                <h2 class="text-3xl font-bold text-gray-800">Perkembangan Sistem Pemerintahan</h2>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="border-l-2 border-red-600 ml-4 pl-8 space-y-8">
+                    <!-- Orde Lama -->
+                    <div class="relative timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded-full">1945-1968</span>
+                                <h3 class="ml-3 text-xl font-semibold text-gray-800">Orde Lama</h3>
+                            </div>
+                            <p class="text-gray-700">Masa pemerintahan di bawah kepemimpinan Presiden Soekarno. Awalnya menggunakan sistem presidensial, kemudian beralih ke sistem parlementer setelah tiga bulan, dan kembali ke sistem presidensial melalui Dekrit Presiden 5 Juli 1959.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Orde Baru -->
+                    <div class="relative timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded-full">1968-1998</span>
+                                <h3 class="ml-3 text-xl font-semibold text-gray-800">Orde Baru</h3>
+                            </div>
+                            <p class="text-gray-700">Masa pemerintahan di bawah kepemimpinan Presiden Soeharto. Awalnya demokrasi mengalami kemajuan, namun kemudian berkembang menjadi otoriter dengan sistem pemerintahan presidensial yang sangat kuat. Soeharto menetapkan demokrasi Pancasila sebagai sistem pemerintahan Indonesia.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Reformasi -->
+                    <div class="relative timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded-full">1998-Sekarang</span>
+                                <h3 class="ml-3 text-xl font-semibold text-gray-800">Reformasi</h3>
+                            </div>
+                            <p class="text-gray-700">Dimulai dari tumbangnya kekuasaan Soeharto pada tahun 1998. Pada era ini, pelaksanaan sistem pemerintahan demokrasi Pancasila diterapkan sesuai dengan asas demokrasi yang berlandaskan Pancasila. Pemerintahan memberikan ruang gerak kepada partai politik dan DPR untuk turut serta mengawasi pemerintahan secara kritis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kelebihan & Kekurangan Section -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Kelebihan Sistem</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Presiden dan menteri selama masa jabatannya tidak dapat dijatuhkan DPR</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Pemerintah punya waktu untuk menjalankan programnya dengan tidak dibayangi krisis kabinet</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Presiden tidak dapat membekukan dan atau membubarkan DPR</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Kelemahan Sistem</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                            <span>Ada kecenderungan terlalu kuatnya otoritas dan konsentrasi kekuasaan di tangan Presiden</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                            <span>Sering terjadinya pergantian para pejabat karena adanya hak prerogatif presiden</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-red-500 mt-1 mr-2"></i>
+                            <span>Pengawasan rakyat terhadap pemerintah kurang berpengaruh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality would go here
+        // This is just a placeholder for the actual implementation
+    </script>
+</body>
+</html>
