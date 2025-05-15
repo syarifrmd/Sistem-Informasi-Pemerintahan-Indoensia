@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Kabinet Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 36px;
+            height: calc(100% - 36px);
+            width: 2px;
+            background: #ef4444;
+        }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ef4444' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Hero Section -->
+    <section class="hero-pattern min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-white to-transparent opacity-90 z-0"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-red-600">
+                    <span class="block">SEJARAH</span>
+                    <span class="block">KABINET INDONESIA</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+                    Perjalanan Kabinet Pemerintahan Indonesia dari Masa ke Masa
+                </p>
+                <div class="mt-12">
+                    <a href="#sejarah" class="scroll-indicator inline-block">
+                        <i class="fas fa-chevron-down text-3xl text-red-600 animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section id="sejarah" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Kabinet Indonesia dari Masa ke Masa</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+
+            <!-- Introduction -->
+            <div class="max-w-4xl mx-auto mb-20 text-center">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Sejak memproklamasikan kemerdekaan pada tanggal 17 Agustus 1945, Indonesia telah mengalami pergantian presiden sebanyak tujuh kali. 
+                    Setiap era kepemimpinan, Presiden Indonesia dibantu oleh kabinetnya masing-masing yang dibentuk untuk membantu tugas presiden selaku kepala pemerintahan.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Soekarno Era -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-8">
+                        <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
+                        <h3 class="text-3xl font-bold text-gray-800">Era Presiden Soekarno</h3>
+                    </div>
+                    
+                    <div class="pl-16 relative">
+                        <!-- Perjuangan Kemerdekaan -->
+                        <div class="mb-12 timeline-item relative">
+                            <div class="flex items-start">
+                                <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">A</div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Perjuangan Kemerdekaan (1945-1949)</h4>
+                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Presidensial</h5>
+                                                <p class="text-gray-600 text-sm">2 Sep 1945 - 14 Nov 1945</p>
+                                                <p class="text-gray-600 mt-1">21 anggota, dipimpin Soekarno</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Sjahrir I</h5>
+                                                <p class="text-gray-600 text-sm">14 Nov 1945 - 12 Mar 1946</p>
+                                                <p class="text-gray-600 mt-1">17 anggota, dipimpin Sutan Syahrir</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Sjahrir II</h5>
+                                                <p class="text-gray-600 text-sm">12 Mar 1946 - 2 Okt 1946</p>
+                                                <p class="text-gray-600 mt-1">25 anggota, dipimpin Sutan Syahrir</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Sjahrir III</h5>
+                                                <p class="text-gray-600 text-sm">2 Okt 1946 - 3 Jul 1947</p>
+                                                <p class="text-gray-600 mt-1">32 anggota, dipimpin Sutan Syahrir</p>
+                                            </div>
+
+
+
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Amir Sjarifuddin I</h5>
+                                                <p class="text-gray-600 text-sm">3 Juli 1947 - 11 November 1947</p>
+                                                <p class="text-gray-600 mt-1">34 anggota, dipimpin Amir Sjarifuddin</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Amir Sjarifuddin II </h5>
+                                                <p class="text-gray-600 text-sm">11 November 1947 – 29 Januari 1948</p>
+                                                <p class="text-gray-600 mt-1">37 anggota, dipimpin Amir Sjarifuddin</p>
+                                            </div>
+
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Hatta I</h5>
+                                                <p class="text-gray-600 text-sm">29 Januari 1948 – 4 Agustus 1949</p>
+                                                <p class="text-gray-600 mt-1">17 anggota, dipimpin Mohammad Hatta</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Darurat </h5>
+                                                <p class="text-gray-600 text-sm">19 Desember 1948 – 13 Juli 1949</p>
+                                                <p class="text-gray-600 mt-1">12 anggota, dipimpin Syafruddin Prawiranegara</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Hatta II </h5>
+                                                <p class="text-gray-600 text-sm">4 Agustus 1949 – 20 Desember 1949</p>
+                                                <p class="text-gray-600 mt-1">19 anggota, dipimpin Mohammad Hatta</p>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <button class="mt-4 text-red-600 font-medium flex items-center">
+                                            Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Demokrasi Parlementer -->
+                        <div class="mb-12 timeline-item relative">
+                            <div class="flex items-start">
+                                <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">B</div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Demokrasi Parlementer (1949-1959)</h4>
+                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                           <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Susanto</h5>
+                                                <p class="text-gray-600 text-sm">20 Des 1949 - 21 Jan 1950</p>
+                                                <p class="text-gray-600 mt-1">10 anggota, dipimpin Susanto Tirtoprodjo (penjabat PM)</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Halim</h5>
+                                                <p class="text-gray-600 text-sm">21 Jan 1950 - 6 Sep 1950</p>
+                                                <p class="text-gray-600 mt-1">15 anggota, dipimpin Abdul Halim</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Natsir</h5>
+                                                <p class="text-gray-600 text-sm">6 Sep 1950 - 27 Apr 1951</p>
+                                                <p class="text-gray-600 mt-1">18 anggota, dipimpin Mohammad Natsir</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Sukiman-Suwirjo</h5>
+                                                <p class="text-gray-600 text-sm">27 Apr 1951 - 3 Apr 1952</p>
+                                                <p class="text-gray-600 mt-1">20 anggota, dipimpin Sukirman Wirjosandjojo</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Wilopo</h5>
+                                                <p class="text-gray-600 text-sm">3 Apr 1952 - 30 Jul 1953</p>
+                                                <p class="text-gray-600 mt-1">18 anggota, dipimpin Wilopo</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Ali Sastroamidjojo I</h5>
+                                                <p class="text-gray-600 text-sm">30 Jul 1953 - 12 Agu 1955</p>
+                                                <p class="text-gray-600 mt-1">20 anggota, dipimpin Ali Sastroamidjojo</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Burhanuddin Harahap</h5>
+                                                <p class="text-gray-600 text-sm">12 Agu 1955 - 24 Mar 1956</p>
+                                                <p class="text-gray-600 mt-1">23 anggota, dipimpin Burhanuddin Harahap</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Ali Sastroamidjojo II</h5>
+                                                <p class="text-gray-600 text-sm">24 Mar 1956 - 9 Apr 1957</p>
+                                                <p class="text-gray-600 mt-1">25 anggota, dipimpin Ali Sastroamidjojo</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Djuanda</h5>
+                                                <p class="text-gray-600 text-sm">9 Apr 1957 - 10 Jul 1959</p>
+                                                <p class="text-gray-600 mt-1">24 anggota, dipimpin Djuanda</p>
+                                            </div>
+
+                                        </div>
+                                        <button class="mt-4 text-red-600 font-medium flex items-center">
+                                            Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Demokrasi Terpimpin -->
+                        <div class="timeline-item relative">
+                            <div class="flex items-start">
+                                <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">C</div>
+                                <div class="flex-1">
+                                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Demokrasi Terpimpin (1959-1968)</h4>
+                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Kerja I</h5>
+                                                <p class="text-gray-600 text-sm">10 Jul 1959 - 18 Feb 1960</p>
+                                                <p class="text-gray-600 mt-1">33 anggota</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Kerja II</h5>
+                                                <p class="text-gray-600 text-sm">18 Feb 1960 - 6 Mar 1962</p>
+                                                <p class="text-gray-600 mt-1">40 anggota</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Kerja III</h5>
+                                                <p class="text-gray-600 text-sm">6 Mar 1962 - 13 Nov 1963</p>
+                                                <p class="text-gray-600 mt-1">60 anggota</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Kerja IV</h5>
+                                                <p class="text-gray-600 text-sm">13 Nov 1963 - 27 Agu 1964</p>
+                                                <p class="text-gray-600 mt-1">66 anggota</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Dwikora I</h5>
+                                                <p class="text-gray-600 text-sm">27 Agu 1964 - 22 Feb 1966</p>
+                                                <p class="text-gray-600 mt-1">110 anggota</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Dwikora II</h5>
+                                                <p class="text-gray-600 text-sm">24 Feb 1966 - 28 Mar 1966</p>
+                                                <p class="text-gray-600 mt-1">132 anggota (kabinet terbanyak dalam sejarah Indonesia)</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Dwikora III</h5>
+                                                <p class="text-gray-600 text-sm">28 Mar 1966 - 25 Jul 1966</p>
+                                                <p class="text-gray-600 mt-1">76 anggota</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Ampera I</h5>
+                                                <p class="text-gray-600 text-sm">25 Jul 1966 - 17 Okt 1967</p>
+                                                <p class="text-gray-600 mt-1">31 anggota, dipimpin Jenderal Soeharto (Ketua Presidium)</p>
+                                            </div>
+                                            <div class="border-l-4 border-red-600 pl-4">
+                                                <h5 class="font-medium text-gray-800 mb-2">Kabinet Ampera II</h5>
+                                                <p class="text-gray-600 text-sm">17 Okt 1967 - 6 Jun 1968</p>
+                                                <p class="text-gray-600 mt-1">24 anggota, dipimpin Jenderal Soeharto (Penjabat Presiden)</p>
+                                            </div>
+
+                                        </div>
+                                        <button class="mt-4 text-red-600 font-medium flex items-center">
+                                            Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soeharto Era -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-8">
+                        <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">2</div>
+                        <h3 class="text-3xl font-bold text-gray-800">Era Presiden Soeharto</h3>
+                    </div>
+                    
+                    <div class="pl-16">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan I</h5>
+                                    <p class="text-gray-600 text-sm">6 Jun 1968 - 28 Mar 1973</p>
+                                    <p class="text-gray-600 mt-1">24 anggota</p>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan II</h5>
+                                    <p class="text-gray-600 text-sm">28 Mar 1973 - 29 Mar 1978</p>
+                                    <p class="text-gray-600 mt-1">24 anggota</p>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan III</h5>
+                                    <p class="text-gray-600 text-sm">29 Mar 1978 - 19 Mar 1983</p>
+                                    <p class="text-gray-600 mt-1">32 anggota</p>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan IV</h5>
+                                    <p class="text-gray-600 text-sm">19 Mar 1983 - 23 Mar 1988</p>
+                                    <p class="text-gray-600 mt-1">42 anggota</p>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan V</h5>
+                                    <p class="text-gray-600 text-sm">23 Mar 1988 - 17 Mar 1993</p>
+                                    <p class="text-gray-600 mt-1">44 anggota</p>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan VI</h5>
+                                    <p class="text-gray-600 text-sm">17 Mar 1993 - 14 Mar 1998</p>
+                                    <p class="text-gray-600 mt-1">43 anggota</p>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <h5 class="font-medium text-gray-800 mb-2">Kabinet Pembangunan VII</h5>
+                                    <p class="text-gray-600 text-sm">14 Mar 1998 - 21 Mei 1998</p>
+                                    <p class="text-gray-600 mt-1">38 anggota</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reformasi Era -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-8">
+                        <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">3</div>
+                        <h3 class="text-3xl font-bold text-gray-800">Era Reformasi</h3>
+                    </div>
+                    
+                    <div class="pl-16">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Habibie -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-red-600 p-4 text-white">
+                                    <h4 class="font-bold text-lg">B.J. Habibie</h4>
+                                    <p class="text-sm opacity-90">1998-1999</p>
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-medium text-gray-800 mb-1">Kabinet Reformasi Pembangunan</h5>
+                                    <p class="text-gray-600 text-sm">21 Mei 1998 - 20 Okt 1999</p>
+                                    <p class="text-gray-600 mt-2 text-sm">37 anggota</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Gus Dur -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-red-600 p-4 text-white">
+                                    <h4 class="font-bold text-lg">Abdurahman Wahid</h4>
+                                    <p class="text-sm opacity-90">1999-2001</p>
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-medium text-gray-800 mb-1">Kabinet Persatuan Nasional</h5>
+                                    <p class="text-gray-600 text-sm">26 Okt 1999 - 9 Agu 2001</p>
+                                    <p class="text-gray-600 mt-2 text-sm">36 anggota</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Megawati -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-red-600 p-4 text-white">
+                                    <h4 class="font-bold text-lg">Megawati Soekarnoputri</h4>
+                                    <p class="text-sm opacity-90">2001-2004</p>
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-medium text-gray-800 mb-1">Kabinet Gotong Royong</h5>
+                                    <p class="text-gray-600 text-sm">9 Agu 2001 - 20 Okt 2004</p>
+                                    <p class="text-gray-600 mt-2 text-sm">33 anggota</p>
+                                </div>
+                            </div>
+                            
+                            <!-- SBY -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-red-600 p-4 text-white">
+                                    <h4 class="font-bold text-lg">Susilo Bambang Yudhoyono</h4>
+                                    <p class="text-sm opacity-90">2004-2014</p>
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-medium text-gray-800 mb-1">Kabinet Indonesia Bersatu I & II</h5>
+                                    <p class="text-gray-600 text-sm">2004-2009 & 2009-2014</p>
+                                    <p class="text-gray-600 mt-2 text-sm">34 anggota masing-masing</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Jokowi -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-red-600 p-4 text-white">
+                                    <h4 class="font-bold text-lg">Joko Widodo</h4>
+                                    <p class="text-sm opacity-90">2014-Sekarang</p>
+                                </div>
+                                <div class="p-4">
+                                    <h5 class="font-medium text-gray-800 mb-1">Kabinet Kerja & Indonesia Maju</h5>
+                                    <p class="text-gray-600 text-sm">2014-2019 & 2019-Sekarang</p>
+                                    <p class="text-gray-600 mt-2 text-sm">34 anggota masing-masing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistik Section -->
+    <section class="py-16 bg-red-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Fakta Menarik Kabinet Indonesia</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">132</div>
+                    <h4 class="text-lg font-medium text-gray-800 mb-2">Anggota Kabinet Terbanyak</h4>
+                    <p class="text-gray-600">Kabinet Dwikora II (1966) dengan 132 anggota</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">21</div>
+                    <h4 class="text-lg font-medium text-gray-800 mb-2">Anggota Kabinet Pertama</h4>
+                    <p class="text-gray-600">Kabinet Presidensial (1945) dengan 21 anggota</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="text-5xl font-bold text-red-600 mb-3">34</div>
+                    <h4 class="text-lg font-medium text-gray-800 mb-2">Anggota Kabinet Modern</h4>
+                    <p class="text-gray-600">Kabinet Indonesia Maju (2019) dengan 34 anggota</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-1 bg-red-600"></div>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Sejarah Kabinet Indonesia</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Dokumentasi perjalanan kabinet pemerintahan Indonesia sejak kemerdekaan hingga sekarang.
+                </p>
+                <div class="mt-8">
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2023 Sejarah Indonesia. Semua hak dilindungi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Expandable timeline sections
+        document.querySelectorAll('.timeline-item button').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.parentElement;
+                const isExpanded = content.getAttribute('data-expanded') === 'true';
+                
+                if (isExpanded) {
+                    content.setAttribute('data-expanded', 'false');
+                    this.innerHTML = 'Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>';
+                } else {
+                    content.setAttribute('data-expanded', 'true');
+                    this.innerHTML = 'Sembunyikan <i class="fas fa-chevron-up ml-2 text-sm"></i>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
