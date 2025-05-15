@@ -31,8 +31,49 @@
     </style>
 </head>
 <body class="bg-white font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="hidden md:block">
+                        <div class="flex-shrink-0">
+                        <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Garuda">
+                    </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <div class="ml-10 flex space-x-6">
+                            <a href="index.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                            <a href="sejarah.html" class="bg-red-600 text-white px-3 py-2 rounded-md text-sm font-medium">Sejarah</a>
+                            <a href="struktur.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Struktur Kabinet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="menu-toggle" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="sejarah.html" class="bg-red-600 text-white block px-3 py-2 rounded-md text-base font-medium">Sejarah</a>
+                <a href="struktur.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Struktur Kabinet</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero-pattern min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
+    <section id="awal" class="hero-pattern min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-white to-transparent opacity-90 z-0"></div>
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center">
@@ -76,15 +117,15 @@
                         <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">1</div>
                         <h3 class="text-3xl font-bold text-gray-800">Era Presiden Soekarno</h3>
                     </div>
-                    
                     <div class="pl-16 relative">
-                        <!-- Perjuangan Kemerdekaan -->
-                        <div class="mb-12 timeline-item relative">
-                            <div class="flex items-start">
-                                <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">A</div>
-                                <div class="flex-1">
-                                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Perjuangan Kemerdekaan (1945-1949)</h4>
-                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="mb-12 timeline-item relative">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">A</div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Perjuangan Kemerdekaan (1945-1949)</h4>
+                                <div class="bg-gray-50 p-6 rounded-lg shadow-sm" data-expanded="false">
+                                    <!-- Konten awal (selalu tampil) -->
+                                    <div class="grid md:grid-cols-1 gap-6">
                                         <div class="grid md:grid-cols-2 gap-6">
                                             <div class="border-l-4 border-red-600 pl-4">
                                                 <h5 class="font-medium text-gray-800 mb-2">Kabinet Presidensial</h5>
@@ -106,10 +147,11 @@
                                                 <p class="text-gray-600 text-sm">2 Okt 1946 - 3 Jul 1947</p>
                                                 <p class="text-gray-600 mt-1">32 anggota, dipimpin Sutan Syahrir</p>
                                             </div>
+                                    </div>
 
-
-
-                                            <div class="border-l-4 border-red-600 pl-4">
+                                    <!-- Konten tambahan (default disembunyikan dengan class hidden) -->
+                                    <div class="extra-content hidden grid md:grid-cols-2 gap-6 mt-4">
+                                        <div class="border-l-4 border-red-600 pl-4">
                                                 <h5 class="font-medium text-gray-800 mb-2">Kabinet Amir Sjarifuddin I</h5>
                                                 <p class="text-gray-600 text-sm">3 Juli 1947 - 11 November 1947</p>
                                                 <p class="text-gray-600 mt-1">34 anggota, dipimpin Amir Sjarifuddin</p>
@@ -135,18 +177,16 @@
                                                 <p class="text-gray-600 text-sm">4 Agustus 1949 – 20 Desember 1949</p>
                                                 <p class="text-gray-600 mt-1">19 anggota, dipimpin Mohammad Hatta</p>
                                             </div>
-
-
-
-
-                                        </div>
-                                        <button class="mt-4 text-red-600 font-medium flex items-center">
-                                            Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
-                                        </button>
                                     </div>
+
+                                    <!-- Tombol toggle -->
+                                    <button class="mt-4 text-red-600 font-medium flex items-center">
+                                        Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                    </div>
                         
                         <!-- Demokrasi Parlementer -->
                         <div class="mb-12 timeline-item relative">
@@ -154,8 +194,9 @@
                                 <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">B</div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Demokrasi Parlementer (1949-1959)</h4>
-                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                                        <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm" data-expanded="false">
+                                    <!-- Konten awal (selalu tampil) -->
+                                    <div class="grid md:grid-cols-2 gap-6">
                                            <div class="border-l-4 border-red-600 pl-4">
                                                 <h5 class="font-medium text-gray-800 mb-2">Kabinet Susanto</h5>
                                                 <p class="text-gray-600 text-sm">20 Des 1949 - 21 Jan 1950</p>
@@ -176,6 +217,12 @@
                                                 <p class="text-gray-600 text-sm">27 Apr 1951 - 3 Apr 1952</p>
                                                 <p class="text-gray-600 mt-1">20 anggota, dipimpin Sukirman Wirjosandjojo</p>
                                             </div>
+                                    </div>
+
+                                    <!-- Konten tambahan (default disembunyikan dengan class hidden) -->
+                                    <div class="extra-content hidden grid md:grid-cols-1 gap-6 mt-4">
+                                        <div class="grid md:grid-cols-2 gap-6">
+
                                             <div class="border-l-4 border-red-600 pl-4">
                                                 <h5 class="font-medium text-gray-800 mb-2">Kabinet Wilopo</h5>
                                                 <p class="text-gray-600 text-sm">3 Apr 1952 - 30 Jul 1953</p>
@@ -201,12 +248,13 @@
                                                 <p class="text-gray-600 text-sm">9 Apr 1957 - 10 Jul 1959</p>
                                                 <p class="text-gray-600 mt-1">24 anggota, dipimpin Djuanda</p>
                                             </div>
-
                                         </div>
-                                        <button class="mt-4 text-red-600 font-medium flex items-center">
-                                            Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
-                                        </button>
+                                        
                                     </div>
+                                    <!-- Tombol toggle -->
+                                    <button class="mt-4 text-red-600 font-medium flex items-center">
+                                        Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -217,8 +265,9 @@
                                 <div class="bg-red-100 border-2 border-red-600 w-10 h-10 rounded-full flex items-center justify-center text-red-600 font-bold text-sm mr-4 mt-1">C</div>
                                 <div class="flex-1">
                                     <h4 class="text-xl font-semibold text-gray-800 mb-2">Era Demokrasi Terpimpin (1959-1968)</h4>
-                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                                        <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm" data-expanded="false">
+                                    <!-- Konten awal (selalu tampil) -->
+                                    <div class="grid md:grid-cols-2 gap-6">
                                             <div class="border-l-4 border-red-600 pl-4">
                                                 <h5 class="font-medium text-gray-800 mb-2">Kabinet Kerja I</h5>
                                                 <p class="text-gray-600 text-sm">10 Jul 1959 - 18 Feb 1960</p>
@@ -239,6 +288,11 @@
                                                 <p class="text-gray-600 text-sm">13 Nov 1963 - 27 Agu 1964</p>
                                                 <p class="text-gray-600 mt-1">66 anggota</p>
                                             </div>
+                                    </div>
+
+                                    <!-- Konten tambahan (default disembunyikan dengan class hidden) -->
+                                    <div class="extra-content hidden grid md:grid-cols-1 gap-6 mt-4">
+                                        <div class="grid md:grid-cols-2 gap-6">
                                             <div class="border-l-4 border-red-600 pl-4">
                                                 <h5 class="font-medium text-gray-800 mb-2">Kabinet Dwikora I</h5>
                                                 <p class="text-gray-600 text-sm">27 Agu 1964 - 22 Feb 1966</p>
@@ -264,16 +318,16 @@
                                                 <p class="text-gray-600 text-sm">17 Okt 1967 - 6 Jun 1968</p>
                                                 <p class="text-gray-600 mt-1">24 anggota, dipimpin Jenderal Soeharto (Penjabat Presiden)</p>
                                             </div>
-
                                         </div>
-                                        <button class="mt-4 text-red-600 font-medium flex items-center">
-                                            Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
-                                        </button>
+                                        
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <!-- Tombol toggle -->
+                                    <button class="mt-4 text-red-600 font-medium flex items-center">
+                                        Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                                    </button>
                     </div>
+                    </div>
+
                 </div>
 
                 <!-- Soeharto Era -->
@@ -437,6 +491,15 @@
         </div>
     </section>
 
+    <div class=" my-4 flex text-center items-center">
+        <div class="mt-12 mx-auto"> 
+                <a href="#awal" class="scroll-indicator inline-block">
+                    <p class="animate-bounce mx-auto text-red-600" >Kembali Keatas</p> <br>
+                    <i class="fas fa-chevron-up text-3xl text-red-600 animate-bounce"></i>
+                </a>
+            </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-6">
@@ -470,19 +533,30 @@
 
         // Expandable timeline sections
         document.querySelectorAll('.timeline-item button').forEach(button => {
-            button.addEventListener('click', function() {
-                const content = this.parentElement;
-                const isExpanded = content.getAttribute('data-expanded') === 'true';
-                
+            button.addEventListener('click', function () {
+                const container = this.parentElement;
+                const extraContent = container.querySelector('.extra-content');
+                const isExpanded = container.getAttribute('data-expanded') === 'true';
+
                 if (isExpanded) {
-                    content.setAttribute('data-expanded', 'false');
+                    container.setAttribute('data-expanded', 'false');
                     this.innerHTML = 'Lihat Selengkapnya <i class="fas fa-chevron-down ml-2 text-sm"></i>';
+                    extraContent.classList.add('hidden');
                 } else {
-                    content.setAttribute('data-expanded', 'true');
+                    container.setAttribute('data-expanded', 'true');
                     this.innerHTML = 'Sembunyikan <i class="fas fa-chevron-up ml-2 text-sm"></i>';
+                    extraContent.classList.remove('hidden');
                 }
             });
         });
+
+        
+        // Mobile menu toggle functionality would go here
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
     </script>
 </body>
 </html>

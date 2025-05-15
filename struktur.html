@@ -49,29 +49,27 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="flex-shrink-0">
+                    <div class="hidden md:block">
+                        <div class="flex-shrink-0">
                         <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Garuda">
                     </div>
-                    <div class="hidden md:block">
-                        <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="index.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                            <a href="sistem.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Sistem Pemerintahan</a>
-                            <a href="struktur.html" class="bg-red-600 text-white px-3 py-2 rounded-md text-sm font-medium">Struktur Kabinet</a>
-                        </div>
                     </div>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-4 flex items-center md:ml-6">
-                        <button class="bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700">
-                            <i class="fas fa-search mr-2"></i>Cari
-                        </button>
+                        <div class="ml-10 flex space-x-6">
+                            <a href="index.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                            <a href="sejarah.html" class="text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">Sejarah</a>
+                            <a href="struktur.html" class="bg-red-600 text-white px-3 py-2 rounded-md text-sm font-medium">Struktur Kabinet</a>
+                        </div>
                     </div>
                 </div>
                 <div class="-mr-2 flex md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                    <button id="menu-toggle" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <i class="fas fa-bars"></i>
                     </button>
+
                 </div>
             </div>
         </div>
@@ -80,15 +78,8 @@
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
-                <a href="sistem.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Sistem Pemerintahan</a>
+                <a href="sejarah.html" class="text-gray-700 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Sejarah</a>
                 <a href="struktur.html" class="bg-red-600 text-white block px-3 py-2 rounded-md text-base font-medium">Struktur Kabinet</a>
-            </div>
-            <div class="pt-4 pb-3 border-t border-gray-200">
-                <div class="flex items-center px-5">
-                    <button class="bg-red-600 text-white w-full px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700">
-                        <i class="fas fa-search mr-2"></i>Cari
-                    </button>
-                </div>
             </div>
         </div>
     </nav>
@@ -1553,14 +1544,1112 @@ Republik Indonesia
                         </div>
                     </div>
             </div>
-                    
+    <br><br>
+    <!-- Deputy Ministers -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-1 bg-red-600 mr-4"></div>
+                    <h3 class="text-2xl font-bold text-gray-800">Wakil Menteri</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <!-- Card 1 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Letjend_TNI_%28Purn.%29_Lodewijk_Freidrich_Paulus%2C_Wakil_Menteri_Koordinator_Politik_dan_Keamanan.jpg" 
+                    alt="Lodewijk Freidrich Paulus">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Lodewijk Freidrich Paulus</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri Koordinator</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">
+                        Bidang Politik dan Keamanan
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Otto_Hasibuan_pada_saat_pelantikan_sebagai_Wakil_Menteri_Koordinator_Hukum%2C_Hak_Asasi_Manusia%2C_Imigrasi_dan_Permasyarakatan_%282024%29.png" 
+                    alt="Otto Hasibuan">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Otto Hasibuan</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri Koordinator</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">
+                        Bidang Hukum, HAM, Imigrasi, dan Pemasyarakatan
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/96/Bambang_Eko_Suhariyanto.jpg" 
+                    alt="Bambang Eko Suharyanto">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Bambang Eko Suharyanto</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">
+                        Sekretaris Negara
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/00/Juri_Ardiantoro%2C_Wakil_Menteri_Sekretaris_Negara_RI_%282024%29.jpg" 
+                    alt="Juri Ardiantoro">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Juri Ardiantoro</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">
+                        Sekretaris Negara
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bima_Arya_Sugiarto%2C_Wakil_Menteri_Dalam_Negeri_%282024%29.jpeg" 
+                    alt="Bima Arya Sugiarto">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Bima Arya Sugiarto</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">
+                        Dalam Negeri
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/db/Ribka_Haluk%2C_Wakil_Menteri_Dalam_Negeri_%282025%29.png" 
+                    alt="Ribka Haluk">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Ribka Haluk</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Dalam Negeri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 7 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Wakil_Menteri_Luar_Negeri_Republik_Indonesia_Muhammad_Anis_Matta.jpg" 
+                    alt="Muhammad Anis Matta">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Muhammad Anis Matta</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Luar Negeri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 8 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://suarapemerintah.id/wp-content/uploads/2021/10/480px-Arrmanatha_Nasir.jpg" 
+                    alt="Arrmanatha Christiawan Nasir">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Arrmanatha C. Nasir</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Luar Negeri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 9 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Arif_Havas_Oegroseno%2C_Wakil_Menteri_Luar_Negeri_RI_%282024%29_%28cropped%29.jpg" 
+                    alt="Arif Havas">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Arif Havas</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Luar Negeri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 10 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Donny_Ermawan_Taufanto%2C_Wakil_Menteri_Pertahanan_Indonesia_%282024%29.jpg/500px-Donny_Ermawan_Taufanto%2C_Wakil_Menteri_Pertahanan_Indonesia_%282024%29.jpg" 
+                    alt="Doni Hermawan">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Doni Hermawan</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Pertahanan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 11 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Anggota_Badan_Pengkajian_Majelis_Permusyawaratan_Rakyat_Republik_Indonesia_Romo_H._R._Muhammad_Syafi%27i.png/500px-Anggota_Badan_Pengkajian_Majelis_Permusyawaratan_Rakyat_Republik_Indonesia_Romo_H._R._Muhammad_Syafi%27i.png" 
+                    alt="R. Muhammad Syafi’i">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">R. Muhammad Syafi’i</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Agama</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 12 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wakil_Menteri_Hukum_dan_HAM_Edward_Omar_Sharif_Hiariej.jpg/500px-Wakil_Menteri_Hukum_dan_HAM_Edward_Omar_Sharif_Hiariej.jpg" 
+                    alt="Edward Omar Sharif Hiariej">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Edward O. S. Hiariej</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Hukum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 13 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Wakil_Menteri_Hak_Asasi_Manusia_Republik_Indonesia_Mugiyanto.png/500px-Wakil_Menteri_Hak_Asasi_Manusia_Republik_Indonesia_Mugiyanto.png" 
+                    alt="Mugiyanto">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Mugiyanto</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Hak Asasi Manusia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 14 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Wakil_Menteri_Imigrasi_dan_Pemasyarakatan_Silmy_Karim_%282024%29_%28cropped%29.jpg/400px-Wakil_Menteri_Imigrasi_dan_Pemasyarakatan_Silmy_Karim_%282024%29_%28cropped%29.jpg" 
+                    alt="Silmy Karim">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Silmy Karim</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Imigrasi dan Pemasyarakatan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 15 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+    <div class="p-6 card-front">
+        <div class="flex items-start">
+            <div class="flex-shrink-0">
+                <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Thomas_Djiwandono%2C_Wakil_Menteri_Keuangan_II_RI_%282024%29.png/500px-Thomas_Djiwandono%2C_Wakil_Menteri_Keuangan_II_RI_%282024%29.png" 
+                    alt="Thomas AM Djiwandono">
+            </div>
+            <div class="ml-5 flex-1 min-w-0">
+                <h4 class="text-xl font-bold text-gray-800 truncate">Thomas AM Djiwandono</h4>
+                <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+                <div class="mt-3">
+                    <p class="text-gray-700 text-sm leading-snug">Keuangan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 16 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Wakil_Menteri_Keuangan_Republik_Indonesia_Suahasil_Nazara.jpg/500px-Wakil_Menteri_Keuangan_Republik_Indonesia_Suahasil_Nazara.jpg" alt="Suahasil Nazara">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Suahasil Nazara</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Keuangan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 17 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Wakil_Menteri_Keuangan_Republik_Indonesia_Anggito_Abimanyu.jpg/500px-Wakil_Menteri_Keuangan_Republik_Indonesia_Anggito_Abimanyu.jpg" alt="Anggito Abimanyu">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Anggito Abimanyu</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Keuangan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 18 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/55/Fajar_Riza_Ul_Haq%2C_Wakil_Menteri_Pendidikan_Dasar_dan_Menengah_%282024%29.jpg" alt="Fajar Riza Ul haq">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Fajar Riza Ul haq</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pendidikan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 19 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://fh.unpad.ac.id/wp-content/uploads/2021/10/36_Prof.-Atip-Latipulhayat-S.H.LL_.M.Ph_.D..png" alt="Atip Latipulhayat">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Atip Latipulhayat</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pendidikan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 20 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://i0.wp.com/pwmu.co/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-20-at-10.27.52-PM.jpeg?resize=1200%2C862&ssl=1" alt="Fauzan">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Fauzan</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pendidikan Tinggi, Sains, dan Teknologi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 21 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/79/Prof._Stella_Christie%2C_Wakil_Menteri_Pendidikan_Tinggi%2C_Sains%2C_dan_Teknologi_%282024%29_%28cropped%29.jpg" alt="Stella Christie">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Stella Christie</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pendidikan Tinggi, Sains, dan Teknologi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 22 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Giring_Ganesha%2C_Wakil_Menteri_Kebudayaan_%282024%29.jpg" alt="Giring Ganesha">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Giring Ganesha</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Kebudayaan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 23 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dantesaksono_%28cropped%29.jpg/500px-Dantesaksono_%28cropped%29.jpg" alt="Dante Saksono Harbuwono">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Dante Saksono Harbuwono</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Kesehatan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 24 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Agus_Jabo_Priyono.jpg/500px-Agus_Jabo_Priyono.jpg" alt="Agus Jabo Priyono">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Agus Jabo Priyono</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Sosial</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 25 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/82/Immanuel_Ebenezer%2C_Wakil_Menteri_Ketenagakerjaan_%282024%29.jpg" alt="Immanuel Ebenezer Gerungan">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Immanuel Ebenezer Gerungan</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Ketenagakerjaan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 26 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Christina_Aryani.jpg" alt="Christina Aryani">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Christina Aryani</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pelindungan Pekerja Migran Indonesia / Wakil Kepala BP2MI</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 27 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Dzulfikar_Ahmad_Tawalla%2C_Wakil_Menteri_Perlindungan_Pekerja_Migran_%282024%29.jpg" alt="Dzulfikar Ahmad Tawala">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Dzulfikar Ahmad Tawala</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pelindungan Pekerja Migran Indonesia / Wakil Kepala BP2MI</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 28 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/ec/KPU_Faisol_Reza.png" alt="Faisol Riza">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Faisol Riza</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Perindustrian</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 29 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Dyah_Roro_Esti_WP.jpg/500px-Dyah_Roro_Esti_WP.jpg" alt="Dyah Roro Esti Widya Putri">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Dyah Roro Esti Widya Putri</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Perdagangan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 30 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwavpCD9Ow0ZGMQDgbtehMjw7x1kxX2pLbw&s" alt="Yuliot">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Yuliot</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">ESDM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 31 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/03/Diana_Kusumastuti%2C_Wakil_Menteri_Pekerjaan_Umum_%282024%29.jpg" alt="Diana Kusumastuti">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Diana Kusumastuti</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pekerjaan Umum</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 32 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://emedia.dpr.go.id/ebook/wp-content/uploads/2024/02/Fahri_Hamzah_official.jpg" alt="Fahri Hamzah">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Fahri Hamzah</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Perumahan dan Kawasan Permukiman</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 33 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://mmc.tirto.id/image/2016/04/29/ahmadrizapatria_square.jpg" alt="Ahmad Riza Patria">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Ahmad Riza Patria</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Desa dan Pembangunan Daerah Tertinggal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 34 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/81/2024/10/27/ilustrasi-for-radar-malang-30-3920683215.png" alt="Viva Yoga Mauladi">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Viva Yoga Mauladi</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Transmigrasi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 35 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Suntana%2C_Wakil_Menteri_Perhubungan_%282024%29_%28cropped%29.png" alt="Suntana">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Suntana</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Perhubungan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 36 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wakil_Menteri_Komunikasi_dan_Digital_Republik_Indonesia_Angga_Raka_Prabowo.jpg/1200px-Wakil_Menteri_Komunikasi_dan_Digital_Republik_Indonesia_Angga_Raka_Prabowo.jpg" alt="Angga Raka Prabowo">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Angga Raka Prabowo</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Komunikasi dan Digital</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 37 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Wakil_Menteri_Komunikasi_dan_Digital_Republik_Indonesia_Nezar_Patria.jpg" alt="Nezar Patria">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Nezar Patria</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Komunikasi dan Digital</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 38 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/id/4/41/Foto_Sudaryono_Terkini.png" alt="Sudaryono">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Sudaryono</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pertanian</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 39 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Sulaiman_Umar_Siddiq%2C_Wakil_Menteri_Kehutanan_%282024%29_%28cropped%29.png" alt="Sulaiman Umar">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Sulaiman Umar</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Kehutanan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 40 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fM_pGwLK_XKfRIoUJFVwZ-_Qk0cGwa7nyA&s" alt="Didit Herdiawan">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Didit Herdiawan</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Kelautan dan Perikanan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 41 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Ossy_Dermawan%2C_Wakil_Menteri_Agraria_dan_Tata_Ruang_%282024%29_%28cropped%29.jpg" alt="Ossy Dermawan">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Ossy Dermawan</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Agraria dan Tata Ruang / Wakil Kepala Badan Pertanahan Nasional</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 42 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/2/21/Febrian_Alphyanto_Ruddyard.jpg" alt="Febrian Alphyanto Ruddyard">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Febrian Alphyanto Ruddyard</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Perencanaan Pembangunan Nasional / Wakil Kepala Bappenas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 43 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4g2CQvwa_wjNausMaTh0iVJn7ozC9HjASg&s" alt="Purwadi Arianto">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Purwadi Arianto</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pendayagunaan Aparatur Negara dan Reformasi Birokrasi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 44 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Kartika_Wirjoatmodjo_Wamen_BUMN_%28version_2%29.jpg" alt="Kartiko Wirjoatmodjo">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Kartiko Wirjoatmodjo</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Badan Usaha Milik Negara</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 45 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://www.bumn.go.id/storage/pimpinan/Image_1729760486.jpeg" alt="Aminuddin Ma’ruf">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Aminuddin Ma’ruf</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Badan Usaha Milik Negara</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 46 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://www.bumn.go.id/storage/pimpinan/Image_1730693696.jpeg" alt="Dony Oskaria">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Dony Oskaria</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Badan Usaha Milik Negara</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 47 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/93/Ratu_Ayu_Isyana_Bagoes_Oka%2C_Wakil_Menteri_Kependudukan_dan_Pembangunan_Keluarga_%282024%29.jpg" alt="Ratu Ayu Isyana Bagoes Oka">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Ratu Ayu Isyana Bagoes Oka</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Kependudukan dan Pembangunan Keluarga / Wakil Kepala BKKBN</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 48 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Diaz_Hendropiyono.png" alt="Diaz Faisal Malik Hendropiyono">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Diaz Faisal Malik Hendropiyono</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Lingkungan Hidup / Wakil Kepala Badan Pengendalian Lingkungan Hidup</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 49 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/96/Todotua_Pasaribu%2C_Wakil_Menteri_Investasi_dan_Hilirisasi_%282024%29.webp" alt="Todotua Pasaribu">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Todotua Pasaribu</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Investasi dan Hilirisasi / Wakil Kepala Badan Koordinasi Penanaman Modal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 50 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ferry_Juliantono6.jpg/250px-Ferry_Juliantono6.jpg" alt="Ferry Joko Yuliantono">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Ferry Joko Yuliantono</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Koperasi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Card 51 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Hevli_Yuni_Moraza.jpg/250px-Hevli_Yuni_Moraza.jpg" alt="Helvi Yuni">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Helvi Yuni</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Usaha Mikro, Kecil, dan Menengah</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 52 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Ni_Luh_Erna_Erawati%2C_Wakil_Menteri_Pariwisata_%282024%29_%28cropped%29.jpg" alt="Ni Luh Enik Ernawati">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Ni Luh Enik Ernawati</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pariwisata</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 53 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Irene_Umar.jpg/250px-Irene_Umar.jpg" alt="Irene Umar">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Irene Umar</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri / Wakil Kepala</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Ekonomi Kreatif / Badan Ekonomi Kreatif</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 54 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/92/Veronica_Tan%2C_Wakil_Menteri_Pemberdayaan_Perempuan_dan_Perlindungan_Anak_%282024%29.png" alt="Veronica Tan">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Veronica Tan</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pemberdayaan Perempuan dan Perlindungan Anak</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 55 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://akcdn.detik.net.id/visual/2024/10/15/mantan-pebulu-tangkis-nasional-taufik-hidayat_169.jpeg?w=400&q=90" alt="Taufik Hidayat">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Taufik Hidayat</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Menteri</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Pemuda dan Olahraga</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card 56 -->
+<div class="card-3d bg-white rounded-xl shadow-lg overflow-hidden relative transition-all duration-300 hover:shadow-xl">
+  <div class="p-6 card-front">
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <img class="h-20 w-20 rounded-full object-cover border-2 border-red-100"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/77/Muhammad_Qodari%2C_Wakil_Kepala_Staf_Kepresidenan_RI_%282024%29.png" alt="Muhammad Qodari">
+      </div>
+      <div class="ml-5 flex-1 min-w-0">
+        <h4 class="text-xl font-bold text-gray-800 truncate">Muhammad Qodari</h4>
+        <p class="text-sm text-red-500 font-medium mt-1">Wakil Kepala Staf</p>
+        <div class="mt-3">
+          <p class="text-gray-700 text-sm leading-snug">Kepresidenan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+</div>
+
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.querySelector('.md\\:hidden button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+
+        // Mobile menu toggle functionality would go here
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         });
 
         // 3D card effect
